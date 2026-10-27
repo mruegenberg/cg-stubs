@@ -1547,7 +1547,7 @@ EXPLICIT_DEFINITIONS = {
         "setContents": "(self, contents: str, compressionType: EnumValue = compressionType.NoCompression) -> None",
     },
     "InterruptableOperation": {
-        "__exit__": "(self, type: type[BaseException], value: BaseException, traceback: TracebackType) -> None",
+        "__exit__": "(self, type: type[BaseException] | None, value: BaseException | None, traceback: TracebackType | None) -> None",
     },
     "IntParmTemplate": {
         "__init__": "(self, name: str, label: str, num_components: int, default_value: Sequence[int] = ..., min: int = 0, max: int = 10, min_is_strict=False, max_is_strict: bool = False, look: EnumValue = parmLook.Regular, naming_scheme: EnumValue = parmNamingScheme.XYZW, menu_items: Sequence[str] = ..., menu_labels: Sequence[str] = ..., icon_names: Sequence[str] = ..., item_generator_script: str | None = None, item_generator_script_language: EnumValue | None = None, menu_type: EnumValue = menuType.Normal, disable_when: str | None = None, is_hidden: bool = False, is_label_hidden: bool = False, join_with_next: bool = False, help: str | None = None, script_callback: str | None = None, script_callback_language: EnumValue = scriptLanguage.Hscript, tags: Mapping[str, str] = ..., default_expression: Sequence[str] = ..., default_expression_language: Sequence[str] = ...) -> None",
@@ -1581,7 +1581,7 @@ EXPLICIT_DEFINITIONS = {
         "stagePrimStats": "(self, primpath: str | None = None, output_index: int = 0, apply_viewport_overrides: bool = False, ignore_errors: bool = False, do_geometry_counts: bool = False, do_separate_purposes: bool = False, use_last_cook_context_options: bool = True, apply_post_layers: bool = True, frame: float | None = None, context_options: Mapping[str, str | float] | None = None) -> dict[str, int]",
     },
     "LopPostLayer": {
-        "__exit__": "(self, type: type[BaseException], value: BaseException, traceback: TracebackType) -> None",
+        "__exit__": "(self, type: type[BaseException] | None, value: BaseException | None, traceback: TracebackType | None) -> None",
         "layer": "(self) -> pxr.Sdf.Layer",
         "stage": "(self) -> pxr.Usd.Stage",
     },
@@ -1592,7 +1592,7 @@ EXPLICIT_DEFINITIONS = {
         "newPaths": "(self, lopnode: LopNode | None = None, stage: pxr.Usd.Stage | None = None, use_last_cook_context_options: bool = True) -> Tuple[pxr.Sdf.Path, ...]",
     },
     "LopViewportOverrides": {
-        "__exit__": "(self, type: type[BaseException], value: BaseException, traceback: TracebackType) -> None",
+        "__exit__": "(self, type: type[BaseException] | None, value: BaseException | None, traceback: TracebackType | None) -> None",
         "layer": "(self) -> pxr.Sdf.Layer",
         "soloGeometry": "(self) -> pxr.Sdf.Path",
         "soloLights": "(self) -> pxr.Sdf.Path",
@@ -1755,7 +1755,7 @@ EXPLICIT_DEFINITIONS = {
         "setPending": "(self, values: Sequence[float | str]) -> None",
     },
     "PerfMonEvent": {
-        "__exit__": "(self, type: type[BaseException], value: BaseException, traceback: TracebackType) -> None",
+        "__exit__": "(self, type: type[BaseException] | None, value: BaseException | None, traceback: TracebackType | None) -> None",
     },
     "PerfMonProfile": {
         "stats": "(self) -> dict[str, Any]",
@@ -1829,7 +1829,7 @@ EXPLICIT_DEFINITIONS = {
         "__init__": "(self, name: str, label: str, ramp_parm_type: EnumValue, default_value: int = 2, default_basis: EnumValue | None = None, show_controls: bool = True, color_type: EnumValue | None = None, disable_when: str | None = None, is_hidden: bool = False, help: str | None = None, script_callback: str | None = None, script_callback_language: EnumValue = scriptLanguage.Hscript, tags: Mapping[str, str] = ..., default_expression_language: EnumValue = scriptLanguage.Hscript) -> None",
     },
     "RedrawBlock": {
-        "__exit__": "(self, type: type[BaseException], value: BaseException, traceback: TracebackType) -> None",
+        "__exit__": "(self, type: type[BaseException] | None, value: BaseException | None, traceback: TracebackType | None) -> None",
     },
     "RopNode": {
         "addRenderEventCallback": "(self, callback: Callable[[RopNode, EnumValue, float], None], run_before_script: bool = False) -> None",
@@ -1868,7 +1868,7 @@ EXPLICIT_DEFINITIONS = {
         "triggerStateSelector": "(self, action: EnumValue, name: str | None = None) -> None",
     },
     "ScriptEvalContext": {
-        "__exit__": "(self, type: type[BaseException], value: BaseException, traceback: TracebackType) -> None",
+        "__exit__": "(self, type: type[BaseException] | None, value: BaseException | None, traceback: TracebackType | None) -> None",
         "__init__": "(self, node_or_parm: OpNode | Parm) -> None",
     },
     "Selection": {
@@ -1947,10 +1947,10 @@ EXPLICIT_DEFINITIONS = {
         "generateStaticWorkItems": "(self, block: bool = False, nodes: Sequence[TopNode] = ...) -> None",
     },
     "UndosDisabler": {
-        "__exit__": "(self, type: type[BaseException], value: BaseException, traceback: TracebackType) -> None",
+        "__exit__": "(self, type: type[BaseException] | None, value: BaseException | None, traceback: TracebackType | None) -> None",
     },
     "UndosGroup": {
-        "__exit__": "(self, type: type[BaseException], value: BaseException, traceback: TracebackType) -> None",
+        "__exit__": "(self, type: type[BaseException] | None, value: BaseException | None, traceback: TracebackType | None) -> None",
     },
     "Vector2": {
         "__init__": "(self, x: Sequence[float] | 'Vector2' | float = ..., y: float = ...) -> None",
