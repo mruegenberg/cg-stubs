@@ -465,7 +465,7 @@ MISSING_DEFINITIONS = {
         "def insertParmTemplatesBeforeFromData(self, data: dict[str, Any], parm_name: str, rename_conflicts: bool = True) -> dict[str, ParmTuple]",
         "def node(self, node_path: str) -> OpNode | None",
         "def outputConnections(self) -> Tuple[OpNodeConnection, ...]",
-        "def outputConnectors(self) -> Tuple[Tuple[OpNodeConnection, ...], ...]"
+        "def outputConnectors(self) -> Tuple[Tuple[OpNodeConnection, ...], ...]",
         "def outputsAsData(self, ignore_network_dots: bool = False, ignore_subnet_indirect_inputs: bool = False, use_names: bool = False) -> Sequence[dict[str, Any]]",
         "def parmTemplateChildrenAsData(self, name: str= '', parmtemplate_order: bool = False) -> dict[str, Any]",
         "def parmTemplatesAsData(self, name: str= '', children: bool = True, parmtemplate_order: bool = False) -> dict[str, Any]",
