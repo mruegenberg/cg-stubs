@@ -412,7 +412,7 @@ MISSING_CLASSES = {
             "def parseFiles(self, xmlfilename: str) -> None",
             "def parseString(self, xmlstring: str) -> None",
             "def setHotkeyContext(self, hotkey_context) -> None",
-        ],
+        ]
     },
 }
 
@@ -560,6 +560,11 @@ MISSING_DEFINITIONS = {
     },
     "qt": [
         "@staticmethod\ndef mainWindow() -> QtWidgets.QMainWindow",
+        "@staticmethod\ndef fromQColor(qcolor: QtGui.QColor) -> tuple[hou.Color, float]",
+        "@staticmethod\ndef getBrush(color_name: str) -> QtGui.QBrush",
+        "@staticmethod\ndef getColor(color_name: str) -> QtGui.QColor",
+        "@staticmethod\ndef getCursor(cursor_name: str) -> QtGui.QCursor",
+        "@staticmethod\ndef toQColor(hom_color: hou.Color, alpha=1.0: float) -> QtGui.QColor"
     ],
     "ui": [
         "@staticmethod\ndef selectFile(start_directory: str | None = None, title: str | None = None, collapse_sequences: bool = False, file_type: EnumValue = fileType.Any, pattern: str | None = None, default_value: str | None = None, multiple_select: bool = False, image_chooser: bool = False, chooser_mode: EnumValue = fileChooserMode.ReadAndWrite, width: int = 0, height: int = 0) -> str",
