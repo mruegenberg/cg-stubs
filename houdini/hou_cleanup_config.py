@@ -564,7 +564,7 @@ MISSING_DEFINITIONS = {
         "@staticmethod\ndef getBrush(color_name: str) -> QtGui.QBrush",
         "@staticmethod\ndef getColor(color_name: str) -> QtGui.QColor",
         "@staticmethod\ndef getCursor(cursor_name: str) -> QtGui.QCursor",
-        "@staticmethod\ndef toQColor(hom_color: hou.Color, alpha=1.0: float) -> QtGui.QColor"
+        "@staticmethod\ndef toQColor(hom_color: hou.Color, alpha: float = 1.0) -> QtGui.QColor"
     ],
     "ui": [
         "@staticmethod\ndef selectFile(start_directory: str | None = None, title: str | None = None, collapse_sequences: bool = False, file_type: EnumValue = fileType.Any, pattern: str | None = None, default_value: str | None = None, multiple_select: bool = False, image_chooser: bool = False, chooser_mode: EnumValue = fileChooserMode.ReadAndWrite, width: int = 0, height: int = 0) -> str",
