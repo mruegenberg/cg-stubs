@@ -459,11 +459,13 @@ MISSING_DEFINITIONS = {
         "def createNode(self, node_type_name: str, node_name: str | None = None, run_init_scripts: bool = True, load_contents: bool = True, exact_type_name: bool = False, force_valid_node_name: bool = False) -> OpNode",
         "def editablesAsData(self, nodes_only: bool = False, children: bool = True, editables: bool = True, inputs: bool = True, position: bool = True, flags: bool = True, parms: bool = True, default_parmvalues: bool = False, evaluate_parmvalues: bool = False, parms_as_brief: bool = True, parmtemplates: str=..., metadata: bool = False, verbose: bool = False) -> dict[str, Any]",
         "def inputConnections(self) -> Tuple[OpNodeConnection, ...]",
+        "def inputConnectors(self) -> Tuple[Tuple[OpNodeConnection, ...], ...]"
         "def inputsAsData(self, ignore_network_dots: bool = False, ignore_subnet_indirect_inputs: bool = False, use_names: bool = False) -> Sequence[dict[str, Any]]",
         "def insertParmTemplatesAfterFromData(self, data: dict[str, Any], parm_name: str, rename_conflicts: bool = True) -> dict[str, ParmTuple]",
         "def insertParmTemplatesBeforeFromData(self, data: dict[str, Any], parm_name: str, rename_conflicts: bool = True) -> dict[str, ParmTuple]",
         "def node(self, node_path: str) -> OpNode | None",
         "def outputConnections(self) -> Tuple[OpNodeConnection, ...]",
+        "def outputConnectors(self) -> Tuple[Tuple[OpNodeConnection, ...], ...]"
         "def outputsAsData(self, ignore_network_dots: bool = False, ignore_subnet_indirect_inputs: bool = False, use_names: bool = False) -> Sequence[dict[str, Any]]",
         "def parmTemplateChildrenAsData(self, name: str= '', parmtemplate_order: bool = False) -> dict[str, Any]",
         "def parmTemplatesAsData(self, name: str= '', children: bool = True, parmtemplate_order: bool = False) -> dict[str, Any]",
