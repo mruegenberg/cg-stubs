@@ -1561,7 +1561,7 @@ EXPLICIT_DEFINITIONS = {
         "saveFrame": "(self, file_path: str, snapshot: int = 0, xres: int = -1, yres: int = -1, color: str = 'C', alpha: str = 'C', scope: str = '*', lut: str = '', gamma: float = 1.0, convert: bool = True) -> bool",
     },
     "Keyframe": {
-        "__init__": "(self, value: float | None = None, time: float | None = None) -> None",
+        "__init__": "(self, value: float | Keyframe | None = None, time: float | None = None) -> None",
     },
     "LabelParmTemplate": {
         "__init__": "(self, name: str, label: str, column_labels: Sequence[str] = ..., is_hidden: bool = False, is_label_hidden: bool = False, join_with_next: bool = False, help: str | None = None, tags: Mapping[str, str] = ...) -> None",
@@ -1919,7 +1919,7 @@ EXPLICIT_DEFINITIONS = {
         "setSize": "(self, size: Sequence[float] | Vector2) -> None",
     },
     "StringKeyframe": {
-        "__init__": "(self, expression: str | None = None, time: float | None = None, language: EnumValue | None = exprLanguage.Python) -> None",
+        "__init__": "(self, expression: str | Keyframe | StringKeyframe | None = None, time: float | None = None, language: EnumValue | None = exprLanguage.Python) -> None",
     },
     "StringParmTemplate": {
         "__init__": "(self, name: str, label: str, num_components: int, default_value: Sequence[str] = ..., naming_scheme: EnumValue = parmNamingScheme.Base1, string_type: EnumValue = stringParmType.Regular, file_type: EnumValue = fileType.Any, menu_items: Sequence[str] = ..., menu_labels: Sequence[str] = ..., icon_names: Sequence[str] = ..., item_generator_script: str | None = None, item_generator_script_language: EnumValue | None = None, menu_type: EnumValue = menuType.Normal, disable_when: str | None = None, is_hidden: bool = False, is_label_hidden: bool = False, join_with_next: bool = False, help: str | None = None, script_callback: str | None = None, script_callback_language: EnumValue = scriptLanguage.Hscript, tags: Mapping[str, str] = ..., default_expression: Sequence[str] = ..., default_expression_language: Sequence[EnumValue] = ...) -> None",
